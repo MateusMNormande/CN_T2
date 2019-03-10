@@ -42,15 +42,15 @@ def interpolacao(coeficientes, x):
     return p_x
     
 
-qntd_pontos = int(input())
-valores_x = list(map(float,input().split()))
-valores_y = list(map(float,input().split()))
+qntd_pontos = int(input("Digite a quantida de pontos: "))
+valores_x = list(map(float,input("Digite os valores de x: ").split()))
+valores_y = list(map(float,input("Digite os valores de y: ").split()))
 A = matriz_vm(qntd_pontos,valores_x)
 A_inv = inv(np.array(A))
 b = np.array(valores_y)
 coeficientes = list(np.dot(A_inv,b))
 polinomio = gera_polinomio(coeficientes)
 print("p(x) = %s"%polinomio)
-x = float(input())
+x = float(input("Digite o valor a ser interpolado: "))
 p = interpolacao(coeficientes,x)
 print(p)
