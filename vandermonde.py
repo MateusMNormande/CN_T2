@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+Este é um arquivo de script temporário.
+"""
 import numpy as np
 from numpy.linalg import inv
 
