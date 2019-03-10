@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-Este é um arquivo de script temporário.
-"""
 import numpy as np
 from numpy.linalg import inv
 
@@ -13,11 +7,11 @@ def matriz_vm(tamanho,valores_x):
     '''
     matriz = []
     for i in range(len(valores_x)):
-        c = []
+        linha = []
         for j in range(tamanho):
-            d = (valores_x[i])**j
-            c.append(d)
-        matriz.append(c)
+            valor = (valores_x[i])**j
+            linha.append(valor)
+        matriz.append(linha)
     return matriz
 
 def gera_polinomio(coeficientes):
