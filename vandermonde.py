@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-Este é um arquivo de script temporário.
-"""
 import numpy as np
 from numpy.linalg import inv
 
@@ -53,4 +47,4 @@ polinomio = gera_polinomio(coeficientes)
 print("p(x) = %s"%polinomio)
 x = float(input("Digite o valor a ser interpolado: "))
 p = interpolacao(coeficientes,x)
-print(p)
+print("p(%f) = %f"%(x,p))
